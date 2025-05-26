@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>Мониторинг</title>
 </head>
 <body>
-$END$
+    <h1>Данные мониторинга</h1>
+    <ul>
+        {% for key, value in data.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
